@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { HappyThought } from "./components/HappyThought"
-//import { HappyForm } from "./components/HappyForm"
+import { HappyForm } from "./components/HappyForm"
 
 const url = "https://technigo-thoughts.herokuapp.com/"
 
@@ -15,7 +15,11 @@ export const App = () => {
   }, [])
 
   return (
-		<section className="Happy-Thought">
+
+    <React.Fragment>
+      <HappyForm />
+      
+    <section className="Happy-Thought">
 			{thoughts.map((thought) => (
 				<HappyThought
 					message={thought.message}
@@ -25,5 +29,6 @@ export const App = () => {
 				/>
 			))}
 		</section>
+    </React.Fragment>
 	);
 };

@@ -1,23 +1,26 @@
-import React, { useState } from "react"
+import React from 'react';
 
-//const url = "https://technigo-thoughts.herokuapp.com/" do i need this?
+export const HappyForm = () => {
 
-/*export const HappyForm = props => {
-  const [post, setPost] = useState("")
+  /*const handleSubmit = event => {
+    event.preventDefault()
+    props.onFormSubmit(message) // this onFormSubmit comes as a props from App.js
+    setMessage("")
+    };*/
 
-    useEffect(() => {
-    fetch(props.url)
-      .then(res => res.json())
-      .then(json => {
-        console.log(json);
-        setPost(json);
-      });
-  }, [props]);
 
-  return (
-    <div>
-      <h1></h1>
-      
-    </div>
-  );
-};*/
+	return (
+		<section className="send-Happy-formr">
+			<p>What is your mood today?</p>
+			<form>
+				<textarea
+					//className="thought-input"
+					name="thought"
+					type="text"
+					placeholder="Write something"
+				/>
+				<input className="two-hearts-button" type="button" value="❤️ Send love ❤️" />
+			</form>
+		</section>
+	);
+};
