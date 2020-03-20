@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react"
 import { HappyThought } from "./components/HappyThought"
-import { HappyForm } from "./components/HappyForm"
+//import { HappyForm } from "./components/HappyForm"
 
 const url = "https://technigo-thoughts.herokuapp.com/"
 
 export const App = () => {
   const [thoughts, setThoughts] = useState([])
-  const [postedMessage, setPostedMessage] = useState("")
+  //const [postedMessage, setPostedMessage] = useState("")
 
   useEffect(() => {
     fetch(url)
@@ -15,8 +15,15 @@ export const App = () => {
   }, [])
 
   return (
-    <div>
-      Find me in src/app.js jag då?!
-    </div>
-  )
-}
+		<section className="Happy-Thought">
+			{thoughts.map((thought) => (
+				<HappyThought
+					message={thought.message}
+					hearts={thought.hearts}
+          date={thought.createdAt}
+          id={thought._id}
+				/>
+			))}
+		</section>
+	);
+};
