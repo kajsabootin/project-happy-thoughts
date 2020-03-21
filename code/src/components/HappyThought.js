@@ -1,9 +1,10 @@
 import React, { useState } from "react"
+import "./HappyThought.css"
 
 export const HappyThought = ({message, hearts, date, id }) => {
 	return (
 		<section className="thought-container">
-			<h3>{message}</h3>
+			<p>{message}</p>
 			<div className="icon-container">
 				<div>
 					<button className="heart-button">
