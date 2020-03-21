@@ -14,12 +14,12 @@ export const HappyForm = (props) => {
   }
 
 	return (
-		<section className="send-Happy-formr">
+		<section className="send-Happy-form">
 			<p>What is your mood today?</p>
 			<form>
 				<textarea
           placeholder="Write something"
-          //value={message}
+          value={message}
           onChange={event => setMessage(event.target.value)}
         />
       

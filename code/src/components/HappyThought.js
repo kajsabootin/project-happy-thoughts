@@ -8,14 +8,11 @@ export const HappyThought = ({message, hearts, date, id }) => {
 			<div className="icon-container">
 				<div>
 					<button className="heart-button">
-						<div className="heart" /*role="img"*/ aria-label="heart">
-            ❤️
+						<div className="icon-heart" /*role="img"*/ aria-label="icon-heart">
+            ❤️ x {hearts} {date}
 						</div>
 					</button>
-					<span className="all-hearts"> {hearts}  </span>
-
-          <div className="icon-date" > {date} </div>
-
+				
         
 				</div>
 				

@@ -1,4 +1,9 @@
 .thought-container {
  border: 3px solid pink;
  margin: 20px;
+ box-shadow: 4px 4px black;
+}
+
+.icon-container {
+  border: 3px solid green;
 }
