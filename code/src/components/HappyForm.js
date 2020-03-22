@@ -11,19 +11,24 @@ export const HappyForm = (props) => {
         body: JSON.stringify({ message }),
         headers: { "Content-Type": "application/json" }
     })
+    
   }
 
 	return (
 		<section className="send-Happy-form">
 			<p>What is your mood today?</p>
 			<form>
-				<textarea
+				<textarea className="form-message"
           placeholder="Write something"
           value={message}
           onChange={event => setMessage(event.target.value)}
         />
       
-        <input onClick={handleSubmit} className="two-hearts-button" type="button" value="❤️ Just love ❤️"  />
+        <input className="two-hearts-button"
+        onClick={handleSubmit} 
+        disabled={message.length < 6 || message.length > 140 ? true : false}
+        type="button" 
+        value="❤️ Just love ❤️"  />
         
 
 			</form>

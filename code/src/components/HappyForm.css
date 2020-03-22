@@ -23,8 +23,8 @@ p {
   width: 400px;
 }
 
-textarea {
-  border: 3px solid yellow;
+.form-message {
+  border: 3px solid blue;
   width: 90%;
   font-size: 30px;
   /*resize: none;*/
