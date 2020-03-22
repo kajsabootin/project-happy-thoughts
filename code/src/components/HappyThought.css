@@ -4,6 +4,20 @@
  box-shadow: 4px 4px black;
 }
 
+.content-container {
+  border: 3px solid yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
 .icon-container {
-  border: 3px solid green;
+  display: flex;
+}
+
+.heart-button {
+  border-radius: 25px;
+  margin-right: 10px;
 }
