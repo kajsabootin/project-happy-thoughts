@@ -1,23 +1,22 @@
 import React, { useState } from "react"
 
 
-export const HappyHeart = (message, hearts, date, id) => {
+export const HappyHeart = ({ id }) => {
 
-    const handleSubmit = () => {
-      fetch('https://technigo-thoughts.herokuapp.com/THOUGHT_ID/like', {
+  const handleClick = () => {
+    fetch(`https://technigo-thoughts.herokuapp.com/${id}/like`, {
         method: "POST",
-        body: JSON.stringify({ message }),
+        body: "",
         headers: { "Content-Type": "application/json" }
     })
-  }
+}  
 
-  return (
+return (
 
-    <button
-      onClick={handleSubmit}>
-      <span role='img' aria-label='Heart' >
-        {" ❤️ "}
-        </span>
-    </button>
-    );
-};
+    <button className="heart-button"
+    onClick={handleClick} >
+          ❤️ 
+		</button>
+  
+);
+}  

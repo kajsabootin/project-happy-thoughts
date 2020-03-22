@@ -15,10 +15,14 @@ export const App = () => {
       .then(json => setThoughts(json))
   }, [postedMessage])
 
+  const onFormSubmit = message => {
+    setPostedMessage(message)
+  }
+
   return (
 
     <React.Fragment>
-      <HappyForm/>
+      <HappyForm onFormSubmit={onFormSubmit}/>
 
       <section className="Happy-Thought">
 			{thoughts.map((thought) => (
@@ -29,9 +33,7 @@ export const App = () => {
           id={thought._id}
 				/>
 			))}
-		</section>
-
-    
+		</section> 
     </React.Fragment>
 	);
 };

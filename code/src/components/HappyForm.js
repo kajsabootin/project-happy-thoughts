@@ -10,9 +10,13 @@ export const HappyForm = (props) => {
         method: "POST",
         body: JSON.stringify({ message }),
         headers: { "Content-Type": "application/json" }
-    })
-    
-  }
+      })
+          .then(() => {
+              setMessage("")
+              props.onFormSubmit(message)
+
+            })
+          }          
 
 	return (
 		<section className="send-Happy-form">
