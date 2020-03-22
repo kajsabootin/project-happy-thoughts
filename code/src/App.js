@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { HappyThought } from "./components/HappyThought"
 import { HappyForm } from "./components/HappyForm"
+//import { HappyHeart } from "./components/HappyHeart"
 
 const url = "https://technigo-thoughts.herokuapp.com/"
 
@@ -29,6 +30,8 @@ export const App = () => {
 				/>
 			))}
 		</section>
+
+    
     </React.Fragment>
 	);
 };

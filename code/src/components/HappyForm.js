@@ -16,7 +16,7 @@ export const HappyForm = (props) => {
 
 	return (
 		<section className="send-Happy-form">
-			<p>What is your mood today?</p>
+			<p>Who do you want to give some love to today?</p>
 			<form>
 				<textarea className="form-message"
           placeholder="Write something"
@@ -29,7 +29,6 @@ export const HappyForm = (props) => {
         disabled={message.length < 6 || message.length > 140 ? true : false}
         type="button" 
         value="❤️ Just love ❤️"  />
-        
 
 			</form>
 		</section>

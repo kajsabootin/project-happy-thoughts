@@ -1,9 +1,9 @@
 import React, { useState } from "react"
 
-export const HappyHeart = () => {
+
+export const HappyHeart = (message, hearts, date, id) => {
 
     const handleSubmit = () => {
-    event.preventDefault()
       fetch('https://technigo-thoughts.herokuapp.com/THOUGHT_ID/like', {
         method: "POST",
         body: JSON.stringify({ message }),
@@ -12,5 +12,12 @@ export const HappyHeart = () => {
   }
 
   return (
+
+    <button
+      onClick={handleSubmit}>
+      <span role='img' aria-label='Heart' >
+        {" ❤️ "}
+        </span>
+    </button>
     );
 };
