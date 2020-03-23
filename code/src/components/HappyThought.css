@@ -1,17 +1,17 @@
 .thought-container {
- border: 3px solid pink;
+ border: 1px solid #333F48;
  margin: 20px;
  box-shadow: 4px 4px black;
- width: 500px;
+ width: 300px;
 }
 
 .content-container {
-  border: 3px solid yellow;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   padding-left: 7px;
   padding-right: 7px;
+  padding-bottom: 10px;
 }
 
 .icon-container {
@@ -19,6 +19,23 @@
 }
 
 .heart-button {
-  border-radius: 25px;
+  border-radius: 50%; /*vill ha denna helt rund?*/
   margin-right: 10px;
+  border: none;
+  /*border: #ffffff;*/
+  background-color: #F5F5F1;
+}
+
+span {
+  color: #B2BBAD;
+  font-weight: lighter;
+  font-size: 15px;
+}
+
+@media (min-width: 1025px) {
+
+  .thought-container {
+    width: 500px;
+  }
+
 }

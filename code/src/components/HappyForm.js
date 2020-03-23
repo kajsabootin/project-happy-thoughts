@@ -20,11 +20,11 @@ export const HappyForm = (props) => {
 
 	return (
 		<section className="send-Happy-form">
-			<p>Who do you want to give some love to today?</p>
+			<p>What's making you happy right now?</p>
 			<form>
 				<textarea className="form-message"
-          placeholder="Write something"
-          value={message}
+          placeholder="........."
+          value= {message} 
           onChange={event => setMessage(event.target.value)}
         />
       
@@ -32,7 +32,7 @@ export const HappyForm = (props) => {
         onClick={handleSubmit} 
         disabled={message.length < 6 || message.length > 140 ? true : false}
         type="button" 
-        value="❤️ Just love ❤️"  />
+        value="❤️ Send Happy Thoughts! ❤️"  />
 
 			</form>
 		</section>

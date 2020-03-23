@@ -15,8 +15,6 @@ export const HappyThought = ({message, id, date, hearts }) => {
               date={date}
               hearts={hearts}
           />
-
-    
 		</section>
 	);
 };

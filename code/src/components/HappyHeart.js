@@ -26,11 +26,12 @@ return (
 		</button>
 
 
-      <div className="heart-like"> x {likes}</div>
+      <div className="heart-like"> <span> x {likes}</span></div>
 
   </section>
 
-    <div className="timestamp">{moment(date).fromNow()}</div>
+      <div className="timestamp"><span> {moment(date).fromNow()}</span> </div>
+
     
   </div>  
   

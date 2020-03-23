@@ -4,36 +4,54 @@
 }
 
 body {
-  background-color: gray;
+  background-color: #ffffff;
   display: flex;
   justify-content: center;
 }
 
 p {
-  color: black;
+  color: #333F48;
+  margin-left: 11px;
+}
+
+.two-hearts-button {
+  background-color: rgb(244, 134, 170);
+  margin-left: 11px;; 
 }
 
 .send-Happy-form {
-  border: 3px solid blue;
+  background-color: #F5F5F1;
+  border: 1px solid #333F48;
   box-shadow: 7px 7px black;
-  padding-left: 7px;
+  /*padding-left: 7px;*/
   margin-top: 25px;
-  display: flex;
-  flex-direction: column;
-  width: 500px;
+  margin-left: 18px;
+  /*display: flex;
+  flex-direction: column;*/
+  width: 300px;
 }
 
 .form-message {
-  border: 3px solid blue;
+  border: 1px solid#333F48;
   width: 90%;
-  font-size: 30px;
-  /*resize: none;*/
-  padding: 10px;
-  box-shadow: 4px 4px black;
+  height: 80px;
+  margin-left: 11px;
+  /*width: fit-content;*/
+  /*font-size: 20px;*/
+  resize: none;
+  /*padding: 10px;*/
 }
 
 input {
   border-radius: 25px;
   margin-bottom: 12px;
   margin-top: 12px;
+}
+
+@media (min-width: 1025px) {
+
+  .send-Happy-form {
+    width: 500px;
+  }
+
 }
