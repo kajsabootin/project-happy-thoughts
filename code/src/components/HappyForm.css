@@ -15,15 +15,14 @@ p {
 }
 
 .two-hearts-button {
-  background-color: rgb(244, 134, 170);
-  margin-left: 11px;; 
+  background-color: #ffadad;
+  margin-left: 11px;
 }
 
 .send-Happy-form {
   background-color: #F5F5F1;
   border: 1px solid #333F48;
-  box-shadow: 7px 7px black;
-  /*padding-left: 7px;*/
+  box-shadow: 7px 7px black; 
   margin-top: 25px;
   margin-left: 18px;
   /*display: flex;

@@ -12,24 +12,38 @@
   padding-left: 7px;
   padding-right: 7px;
   padding-bottom: 10px;
+  display: flex;
+  align-items: baseline;
 }
 
 .icon-container {
   display: flex;
+  align-items: center;
 }
 
 .heart-button {
   border-radius: 50%; /*vill ha denna helt rund?*/
   margin-right: 10px;
   border: none;
-  /*border: #ffffff;*/
+  width: 35px;
+  height: 35px;
   background-color: #F5F5F1;
 }
+
+.heart-button:focus {
+  background-color: #ffadad;
+}
+
+/*.onClick{
+  background-color: rgb(192, 192, 14);
+}*/
 
 span {
   color: #B2BBAD;
   font-weight: lighter;
   font-size: 15px;
+  padding-bottom: 3px;
+  
 }
 
 @media (min-width: 1025px) {
