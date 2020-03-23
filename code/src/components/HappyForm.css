@@ -25,8 +25,6 @@ p {
   box-shadow: 7px 7px black; 
   margin-top: 25px;
   margin-left: 18px;
-  /*display: flex;
-  flex-direction: column;*/
   width: 300px;
 }
 
@@ -34,11 +32,9 @@ p {
   border: 1px solid#333F48;
   width: 90%;
   height: 80px;
+  font-size: 15px;
   margin-left: 11px;
-  /*width: fit-content;*/
-  /*font-size: 20px;*/
   resize: none;
-  /*padding: 10px;*/
 }
 
 input {

@@ -22,7 +22,7 @@
 }
 
 .heart-button {
-  border-radius: 50%; /*vill ha denna helt rund?*/
+  border-radius: 50%;
   margin-right: 10px;
   border: none;
   width: 35px;
@@ -33,10 +33,6 @@
 .heart-button:focus {
   background-color: #ffadad;
 }
-
-/*.onClick{
-  background-color: rgb(192, 192, 14);
-}*/
 
 span {
   color: #B2BBAD;
