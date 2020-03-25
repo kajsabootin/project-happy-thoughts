@@ -3,6 +3,7 @@
  margin: 20px;
  box-shadow: 4px 4px black;
  width: 300px;
+ overflow-wrap: break-word;
 }
 
 .content-container {
