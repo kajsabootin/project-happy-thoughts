@@ -18,19 +18,33 @@ return (
 
   <div className="content-container">
 
-  <section className="icon-container">
+    <section 
+      
+      className="icon-container">
 
-  <button className="heart-button"
-    onClick={handleClick} >
-          ❤️ 
-		</button>
+      <button 
+      
+        className="heart-button"
+        onClick={handleClick} >
+          <span>❤️ </span>
+		  </button>
 
 
-      <div className="heart-like"> <span> x {likes}</span></div>
+      <div 
+      
+        className="heart-like"> 
+          <span> x {likes}</span>
 
-  </section>
+      </div>
 
-      <div className="timestamp"><span> {moment(date).fromNow()}</span> </div>
+    </section>
+
+      <div 
+        
+        className="timestamp">
+          <span> {moment(date).fromNow()}</span> 
+      
+      </div>
 
     
   </div>  

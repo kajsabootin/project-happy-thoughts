@@ -19,20 +19,28 @@ export const HappyForm = (props) => {
           }          
 
 	return (
-		<section className="send-Happy-form">
-			<p>What's making you happy right now?</p>
+    <section 
+      
+      className="send-Happy-form">
+			  <p>What's making you happy right now?</p>
+
 			<form>
-				<textarea className="form-message"
+        
+        <textarea 
+          
+          className="form-message"
           placeholder="........."
           value= {message} 
           onChange={event => setMessage(event.target.value)}
         />
       
-        <input className="two-hearts-button"
-        onClick={handleSubmit} 
-        disabled={message.length < 6 || message.length > 140 ? true : false}
-        type="button" 
-        value="❤️ Send Happy Thoughts! ❤️"  />
+        <input 
+          
+          className="two-hearts-button"
+          onClick={handleSubmit} 
+          disabled={message.length < 6 || message.length > 140 ? true : false}
+          type="button" 
+          value="❤️ Send Happy Thoughts! ❤️"  />
 
 			</form>
 		</section>
