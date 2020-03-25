@@ -1,5 +1,4 @@
-import React, { useState } from "react"
-import moment from 'moment'
+import React from "react"
 import "./HappyThought.css"
 import { HappyHeart } from "./HappyHeart"
 

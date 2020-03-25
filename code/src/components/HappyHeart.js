@@ -26,7 +26,14 @@ return (
       
         className="heart-button"
         onClick={handleClick} >
-          <span>❤️ </span>
+
+          <span 
+
+            className="heart" 
+            role="img" 
+            aria-label="Red heart">
+					❤️
+				</span>
 		  </button>
 
 
