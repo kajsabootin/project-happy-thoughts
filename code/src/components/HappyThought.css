@@ -31,8 +31,13 @@
   background-color: #F5F5F1;
 }
 
-.heart-button:focus {
+.heart-button-like {
   background-color: #ffadad;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: none;
+  width: 35px;
+  height: 35px;
 }
 
 span {

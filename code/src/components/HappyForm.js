@@ -38,7 +38,7 @@ export const HappyForm = (props) => {
           
           className="two-hearts-button"
           onClick={handleSubmit} 
-          disabled={message.length < 6 || message.length > 140 ? true : false}
+          disabled={message.length < 5 || message.length > 140 ? true : false}
           type="button" 
           value="❤️ Send Happy Thoughts! ❤️"  />
 

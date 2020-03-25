@@ -3,6 +3,7 @@ import moment from 'moment'
 
 export const HappyHeart = ({ id, hearts, date}) => {
   const [likes, setLikes] = useState(hearts)
+  const [hasLiked, setHasLiked] = useState(false);
 
   const handleClick = () => {
     fetch(`https://technigo-thoughts.herokuapp.com/${id}/like`, {
@@ -11,6 +12,7 @@ export const HappyHeart = ({ id, hearts, date}) => {
         headers: { "Content-Type": "application/json" }
       }).then(() => {
         setLikes(likes + 1)
+        setHasLiked(true)
       })
     }
 
@@ -24,8 +26,9 @@ return (
 
       <button 
       
-        className="heart-button"
-        onClick={handleClick}   
+        className={hasLiked > 0 ? 'heart-button-like' : 'heart-button'}
+        onClick={handleClick}  
+       
       >
 
           <span 
