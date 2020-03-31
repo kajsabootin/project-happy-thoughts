@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react"
 import { HappyThought } from "./components/HappyThought"
-import { HappyForm } from "./components/HappyForm"
+import { Form } from "./components/HappyForm"
 
 const url = "https://technigo-thoughts.herokuapp.com/"
 
@@ -22,7 +22,7 @@ export const App = () => {
 
     <React.Fragment>
       
-      <HappyForm onFormSubmit={onFormSubmit}/>
+      <Form onFormSubmit={onFormSubmit}/>
 
       <section 
         
