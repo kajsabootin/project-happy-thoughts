@@ -26,8 +26,7 @@ return (
 
       <button 
       
-        className={hasLiked > 0 ? 'heart-button-like' : 'heart-button'}
-        onClick={handleClick}  
+        className={hasLiked > 0 ? 'heart-button-like' : 'heart-button'}onClick={handleClick}  
        
       >
 
