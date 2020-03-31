@@ -29,9 +29,10 @@ export const App = () => {
         className="Happy-Thought">
 			  {thoughts.map((thought) => (
 				  <HappyThought
-					  message={thought.message}
-					  hearts={thought.hearts}
-            date={thought.createdAt}
+	  				key={thought._id}
+					 message={thought.message}
+					 hearts={thought.hearts}
+             date={thought.createdAt}
             id={thought._id}
 				  />
 
