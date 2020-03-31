@@ -32,11 +32,9 @@ return (
 
           <span 
 
-            className="heart" 
-            role="img" 
-            aria-label="Red heart">
+            className="heart" role="img" aria-label="Red heart">
 					❤️
-				</span>
+				  </span>
 		  </button>
 
 
