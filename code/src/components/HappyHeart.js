@@ -26,19 +26,12 @@ return (
 
       <button 
       
-        className={hasLiked > 0 ? 'heart-button-like' : 'heart-button'}
-        onClick={handleClick}  
-       
-      >
+        className={hasLiked > 0 ? 'heart-button-like' : 'heart-button'} onClick={handleClick} >
 
-          <span 
-
-            className="heart" 
-            role="img" 
-            aria-label="Red heart">
-					❤️
-				</span>
-		  </button>
+          	<span className="heart" role="img" aria-label="Red heart">
+			❤️
+		</span>
+	</button>
 
 
       <div 
