@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import "./HappyForm.css"
 
-export const HappyForm = (props) => {
+export const Form = (props) => {
   const [message, setMessage] = useState("")
 
   const handleSubmit = (event) => {
