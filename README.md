@@ -1,12 +1,24 @@
 # Happy Thoughts
 
-We built a mini version of Twitter, but with less negativity. (Just love).
+Small Twitter-like application collecting happy thoughts. The application is fetching and posting data by using React and three API endpoints.
 
 ## The problem
 
-Describe how you approached to problem, and what tools and techniques you used to solve it. How did you plan? What technologies did you use? If you had more time, what would be next?
-
 - I struggled so much with the function "post new message "and also to be able to "like new message". But I made it work so it updates automatically.
+
+## Learning objectives
+
+- Using APIs in React, firing requests witin useEffect
+- Displaying results of API responses via React state
+- Working with APIs to both send and reveive data
+
+## Tech
+
+- HTML5
+- CSS3
+- JavaScript ES6
+- React
+- JSX
 
 ## View it live
 
