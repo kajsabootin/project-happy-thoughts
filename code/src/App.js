@@ -29,10 +29,17 @@ export const App = () => {
         className="Happy-Thought">
 			  {thoughts.map((thought) => (
 				  <HappyThought
+<<<<<<< HEAD
             key={thought._id}
 					  message={thought.message}
 					  hearts={thought.hearts}
             date={thought.createdAt}
+=======
+	  				key={thought._id}
+					 message={thought.message}
+					 hearts={thought.hearts}
+             date={thought.createdAt}
+>>>>>>> 48ca4fa0e686f4eac2d139c33f0b6cf652c1ac0e
             id={thought._id}
 				  />
 
