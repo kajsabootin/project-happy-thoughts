@@ -21,25 +21,20 @@ return (
   <div className="content-container">
 
     <section 
-      
       className="icon-container">
 
       <button 
       
-        className={hasLiked > 0 ? 'heart-button-like' : 'heart-button'}onClick={handleClick}  
-       
-      >
+        className={hasLiked > 0 ? 'heart-button-like' : 'heart-button'}onClick={handleClick}>
 
           <span 
 
             className="heart" role="img" aria-label="Red heart">
 					❤️
-				  </span>
+				</span>
 		  </button>
 
-
       <div 
-      
         className="heart-like"> 
           <span> x {likes}</span>
 
@@ -53,8 +48,6 @@ return (
           <span> {moment(date).fromNow()}</span> 
       
       </div>
-
-    
   </div>  
   
 );

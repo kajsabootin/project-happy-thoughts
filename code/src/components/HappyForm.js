@@ -42,6 +42,7 @@ export const Form = (props) => {
           type="button" 
           value="❤️ Send Happy Thoughts! ❤️"  />
 
+      
 			</form>
 		</section>
 );

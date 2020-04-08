@@ -2,7 +2,7 @@ import React from "react"
 import "./HappyThought.css"
 import { HappyHeart } from "./HappyHeart"
 
-export const HappyThought = ({message, id, date, hearts }) => {
+export const HappyThought = ({message, id, date, hearts}) => {
 
 	return (
 		
@@ -16,6 +16,7 @@ export const HappyThought = ({message, id, date, hearts }) => {
           id={id}
           date={date}
           hearts={hearts}
+          
       />
 		</section>
 	);

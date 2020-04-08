@@ -29,6 +29,7 @@ export const App = () => {
         className="Happy-Thought">
 			  {thoughts.map((thought) => (
 				  <HappyThought
+            key={thought._id}
 					  message={thought.message}
 					  hearts={thought.hearts}
             date={thought.createdAt}
