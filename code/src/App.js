@@ -36,6 +36,8 @@ export const App = () => {
             id={thought._id}
 				  />
 
+            					
+
 			))}
 		  </section> 
 
