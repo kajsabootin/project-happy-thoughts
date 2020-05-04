@@ -1,9 +1,9 @@
 .thought-container {
- border: 1px solid #333F48;
- margin: 20px;
- box-shadow: 4px 4px black;
- width: 300px;
- overflow-wrap: break-word;
+  border: 1px solid #333f48;
+  margin: 20px;
+  box-shadow: 4px 4px black;
+  width: 300px;
+  overflow-wrap: break-word;
 }
 
 .content-container {
@@ -28,7 +28,7 @@
   border: none;
   width: 35px;
   height: 35px;
-  background-color: #F5F5F1;
+  background-color: #f5f5f1;
 }
 
 .heart-button-like {
@@ -41,17 +41,14 @@
 }
 
 span {
-  color: #B2BBAD;
+  color: #b2bbad;
   font-weight: lighter;
   font-size: 15px;
   padding-bottom: 3px;
-  
 }
 
 @media (min-width: 1025px) {
-
   .thought-container {
     width: 500px;
   }
-
 }
