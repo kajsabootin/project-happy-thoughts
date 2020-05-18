@@ -28,7 +28,7 @@ export const App = () => {
             key={thought._id}
             message={thought.message}
             hearts={thought.hearts}
-            date={thought.createdAt}
+            createdAt={thought.createdAt}
             id={thought._id}
           />
         ))}

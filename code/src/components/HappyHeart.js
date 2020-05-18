@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import moment from "moment";
 
-export const HappyHeart = ({ id, hearts, date }) => {
+export const HappyHeart = ({ id, hearts, createdAt }) => {
   const [likes, setLikes] = useState(hearts);
   const [hasLiked, setHasLiked] = useState(false);
 
@@ -34,7 +34,7 @@ export const HappyHeart = ({ id, hearts, date }) => {
       </section>
 
       <div className="timestamp">
-        <span> {moment(date).fromNow()}</span>
+        <span> {moment(createdAt).fromNow()}</span>
       </div>
     </div>
   );
