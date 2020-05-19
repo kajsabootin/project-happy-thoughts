@@ -6,11 +6,14 @@ export const HappyHeart = ({ id, hearts, createdAt }) => {
   const [hasLiked, setHasLiked] = useState(false);
 
   const handleClick = () => {
-    fetch(`https://technigo-thoughts.herokuapp.com/${id}/like`, {
-      method: "POST",
-      body: "",
-      headers: { "Content-Type": "application/json" },
-    }).then(() => {
+    fetch(
+      `https://happy-thoughts-api-kajsa.herokuapp.com/thoughts/${id}/like`,
+      {
+        method: "POST",
+        body: "",
+        headers: { "Content-Type": "application/json" },
+      }
+    ).then(() => {
       setLikes(likes + 1);
       setHasLiked(true);
     });

@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { HappyThought } from "./components/HappyThought";
 import { Form } from "./components/HappyForm";
 
-const url = "https://technigo-thoughts.herokuapp.com/";
+const url = "https://happy-thoughts-api-kajsa.herokuapp.com/thoughts";
 
 export const App = () => {
   const [thoughts, setThoughts] = useState([]);
